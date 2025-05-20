@@ -1,5 +1,9 @@
 package main
 
+/*
+iota usage in constant declarations
+*/
+
 import "fmt"
 
 type ByteSize uint64
