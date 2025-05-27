@@ -33,6 +33,16 @@ require (
 )
 ```
 
+## go get
+
+Add module dependencies.
+
+```
+go get <repository_url@version>
+```
+Version is a version tag in the repository. Also we can use a commit hash. 
+
+
 ## Module vs Package
 
 A module can contain several packages.
