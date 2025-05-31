@@ -42,6 +42,16 @@ go get <repository_url@version>
 ```
 Version is a version tag in the repository. Also we can use a commit hash. 
 
+## Module versioning
+
+Modules can be referenced using a commit refrence or a version tag. The recommended way to go is use version tags,
+which are defined using ```git tag``` commands.
+
+Versioning introduces the use of semantic versioning. Given a version numver like X.Y.Z :
+
+- X is the major version. Notes that major changes are introduced. Backard compatibility can be broken.
+- Y is the minor version. The version introduces minor changes. Application is backward compatible.
+- Z is the patch version. The version introdudes bg fixes. Application is backward compatible.
 
 ## Module vs Package
 
@@ -50,3 +60,5 @@ A module can contain several packages.
 ## Resources
 
 - [How to use Go modules](https://www.digitalocean.com/community/tutorials/how-to-use-go-modules)
+- [Practical Go lessons, modules](https://www.practical-go-lessons.com/chap-17-go-modules)
+- [Semantic versioning](https://semver.org)
