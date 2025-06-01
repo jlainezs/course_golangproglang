@@ -1,3 +1,5 @@
-# Delete a file from command line
+# Clone a repo
+
+- Clone a repository: git clone git@github.com:jlainezs/crispy-chainsaw.git
 
 Nothing to do...
