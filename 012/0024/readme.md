@@ -24,6 +24,8 @@ When executing the program, the antivirus may block it.
 - Pause the antivirus
 - Add this exe file to the antivirus exclusions list
 
+The antivirus blocks the execution if we use `println` instead of `fmt.Println`
+
 # Sign exe
 
 On Windows, install make with chocolatery `choco install make` and sign the executable [See here](https://stackoverflow.com/questions/51717409/is-there-any-way-to-sign-the-windows-executables-generated-by-the-go-compiler)
