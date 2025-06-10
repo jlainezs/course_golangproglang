@@ -15,4 +15,5 @@ func main() {
 		"Wolverine Tracks (GF)"}
 	fmt.Println(v)
 	fmt.Println(len(v))
+	fmt.Printf("%T\n", v)
 }
