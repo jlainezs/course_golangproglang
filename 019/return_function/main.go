@@ -3,12 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	x := foo
-	fmt.Println(x())
+	x := foo()
+	fmt.Println(x)
 
 	y := bar()
 	r := y()
 	fmt.Println(r)
+
+	fmt.Printf("%T\n", x)
+	fmt.Printf("%T\n", y)
+	fmt.Printf("%T\n", r)
 }
 
 func foo() int {
