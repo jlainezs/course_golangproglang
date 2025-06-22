@@ -18,3 +18,4 @@ Golang programming course exercises. I'm doing this course just to show I can co
 - [Golang playground](https://go.dev/play/)
 - Visual studio Code
   - [Extension](https://code.visualstudio.com/docs/languages/go)
+- [Applied Go](https://appliedgo.net/)
