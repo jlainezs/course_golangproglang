@@ -1,9 +1,16 @@
 package main
 
-import "fmt"
+// note
+// constraints should be added to the package
+// > go get golang.org/x/exp/constraints
+
+import (
+	"fmt"
+	"golang.org/x/exp/constraints"
+)
 
 type myNumbers interface {
-	~int | ~float64
+	constraints.Integer | constraints.Float
 }
 
 func add[T myNumbers](a, b T) T {
