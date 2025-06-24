@@ -2,7 +2,11 @@ package main
 
 import "fmt"
 
-func add[T int | float64](a, b T) T {
+type myNumbers interface {
+	~int | ~float64
+}
+
+func add[T myNumbers](a, b T) T {
 	return a + b
 }
 
