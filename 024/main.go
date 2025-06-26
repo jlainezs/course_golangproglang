@@ -34,4 +34,18 @@ func main() {
 	}
 	strPeople := string(bs)
 	fmt.Println(strPeople)
+
+	//
+	s := `[{"First":"James","Last":"Bond","Age":32},{"First":"Miss","Last":"Moneypenny","Age":27}]`
+	bs = []byte(s)
+	fmt.Printf("%T\n", bs)
+	fmt.Printf("%v\n", bs)
+
+	var morePeople []person
+	err = json.Unmarshal(bs, &morePeople)
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(morePeople)
+
 }
