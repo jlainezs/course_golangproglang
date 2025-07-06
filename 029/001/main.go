@@ -5,9 +5,9 @@ import (
 )
 
 func main() {
-	c := make(chan int)
+	c := make(chan int, 1)
 
 	c <- 42
 
-	fmt.Println(<-c)
+	fmt.Printf("%d", <-c)
 }
