@@ -11,9 +11,7 @@ func main() {
 		cs <- 42
 	}()
 
-	go func(c <-chan int) {
-		fmt.Println(<-cs)
-	}(cs)
+	fmt.Println(<-cs)
 
 	fmt.Printf("------\n")
 	fmt.Printf("cs\t%T\n", cs)
