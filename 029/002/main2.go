@@ -10,7 +10,10 @@ func main() {
 	go func() {
 		cr <- 42
 	}()
-	fmt.Println(<-cr)
+
+	go func(c <-chan int) {
+		fmt.Println(<-c)
+	}(cr)
 
 	fmt.Printf("------\n")
 	fmt.Printf("cr\t%T\n", cr)
