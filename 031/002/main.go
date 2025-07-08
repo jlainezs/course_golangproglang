@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"log"
 )
 
 type person struct {
@@ -19,12 +20,20 @@ func main() {
 	}
 
 	bs, err := toJSON(p1)
+	if err != nil {
+		log.Fatalln(fmt.Errorf("error converting person to JSON: %v", err))
+	}
 
 	fmt.Println(string(bs))
 
 }
 
 // toJSON needs to return an error also
-func toJSON(a interface{}) []byte {
-	bs, _ := json.Marshal(a)
+func toJSON(a interface{}) ([]byte, error) {
+	bs, err := json.Marshal(a)
+	if err != nil {
+		return nil, fmt.Errorf("marshalling failed: %v", err)
+	}
+
+	return bs, nil
 }
