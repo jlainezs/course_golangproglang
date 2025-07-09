@@ -1,6 +1,6 @@
 # GoLang Programming exercises
 
-Golang programming course exercises. I'm doing this course just to show I can code in go.
+Golang programming course exercises. I'm doing this course just to show I can code in Golang.
 
 - [Download Go](https://go.dev/dl/)
 - [Go installation instructions](https://go.dev/doc/install)
