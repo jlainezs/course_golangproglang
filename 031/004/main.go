@@ -24,7 +24,14 @@ func main() {
 
 func sqrt(f float64) (float64, error) {
 	if f < 0 {
-		// write your error code here
+		e := fmt.Errorf("can't sqrt a negative number")
+		// ... or
+		// e := errors.New("can't sqrt a negative number")
+		return 0, sqrtError{
+			lat:  "50.2289 N",
+			long: "99.4656 W",
+			err:  e,
+		}
 	}
 	return 42, nil
 }
