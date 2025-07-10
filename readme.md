@@ -20,3 +20,5 @@ Golang programming course exercises. I'm doing this course just to show I can co
   - [Extension](https://code.visualstudio.com/docs/languages/go)
 - [Applied Go](https://appliedgo.net/)
 - [Go Concurrency patterns](https://go.dev/talks/2012/concurrency.slide#1)
+- [Go packages documentation](https://pkg.go.dev/)
+
