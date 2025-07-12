@@ -80,3 +80,6 @@ fabric.properties
 # avuid exes
 *.exe
 *.pdf
+
+# profiles
+*.out
